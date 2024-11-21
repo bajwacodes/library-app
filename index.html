@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Library Application</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <button id="newBook">Add New Book</button>
+
+            <form action="" id="form">
+
+                <fieldset>
+                    <label for="book-title">Book Title</label>
+                    <input type="text" id="book-title" name="book-title" required>
+    
+                    <label for="book-author">Book Author</label>
+                    <input type="text" id="book-author" name="book-author" required>
+    
+                    <label for="pages">How many pages?</label>
+                    <input type="number" id="pages" name="pages" min="1" required>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Have you read it?</legend>
+
+                    <label for="read-yes">Yes</label>
+                    <input type="radio" name="read-status" id="read-yes" value="true" required>
+
+                    <label for="read-no">No</label>
+                    <input type="radio" name="read-status" id="read-no" value="false" required>
+                </fieldset>
+
+                <button id="submitBook">Submit your book</button>
+            </form>
+
+            <button id="showBooks">Show My Library</button>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
